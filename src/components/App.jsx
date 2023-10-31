@@ -82,7 +82,7 @@ function App() {
             <div className={logo ? "logo-wrap" : "logo-diss"}>
               <img className="logo-img" src="/images/logo.png" alt="" />
             </div>
-            <div
+            {/* <div
               className="kaki-btn"
               onClick={() => {
                 setLogo(false);
@@ -92,9 +92,9 @@ function App() {
             >
               <img className="kaki-img" src="/images/pen.png" alt="" />
               <h2>かきとり</h2>
-            </div>
+            </div> */}
 
-            <div
+            {/* <div
               className="story-btn"
               onClick={() => {
                 setLogo(false);
@@ -104,7 +104,20 @@ function App() {
             >
               <img src="/images/note.png" alt="" />
               <h2>ストーリー</h2>
-            </div>
+            </div> */}
+
+            <nav className="menu">
+              <input type="radio" name="nav-item" id="m-story" />
+              <label htmlFor="m-story">ストーリー</label>
+
+              <input type="radio" name="nav-item" id="m-home" defaultChecked />
+              <label htmlFor="m-home">ホーム</label>
+
+              <input type="radio" name="nav-item" id="m-kakitori" />
+              <label htmlFor="m-kakitori">かきとり</label>
+
+              <div className="selector"></div>
+            </nav>
 
             <div className="start-wrap">
               <div
